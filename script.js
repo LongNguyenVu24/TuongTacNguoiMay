@@ -35,3 +35,25 @@ else if(localStorage.getItem("theme") == "dark"){
 else{
     localStorage.setItem("theme", "light");
 }
+
+$('#modalAddSchedule').on("click",function(e){
+    $('#exampleModal').addClass('show');
+    $('#exampleModal').css('display','block');
+})
+$(document).on('hidden.bs.modal', function () {
+    if ($('.modal:visible').length) {
+      $('body').addClass('modal-open');
+    }
+  });
+$('#exampleModal').on('shown.bs.modal', function() {
+    $(document).off('focusin.modal');
+});
+$('#exampleModalLong').on('shown.bs.modal', function() {
+    $(document).off('focusin.modal');
+});
+
+
+$('.close-add-schedule').on("click",function(e){
+    $('#exampleModal').removeClass('show');
+    $('#exampleModal').css('display','none');
+})
