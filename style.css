@@ -408,7 +408,20 @@ nav{
     border-radius: 50%;
     margin-right: 5px;
 }
-
+/*----message-pop---*/
+.message-pop{
+    width: 90%;
+    max-width: 350px;
+    max-height: 0px;
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    position: absolute;
+    top: 108%;
+    left: 5%;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
 /* --------settings-menu----------- */
 .settings-menu{
     width: 90%;
